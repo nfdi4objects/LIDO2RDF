@@ -14,7 +14,7 @@ Anja Gerber
 Klassik Stiftung Weimar | NFDI4Objects  
 anja.gerber@klassik-stiftung.de  
   
-Josef Heers  
+Josef Heers | NFDI4Objects  
 Verbundzentrale des GBV  
 josef.heers@gbv.de
 
