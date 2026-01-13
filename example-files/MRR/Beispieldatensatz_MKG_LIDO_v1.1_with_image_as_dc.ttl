@@ -1,0 +1,93 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a dcmitype:Image ;
+    dcterms:description """Blick in geöffneten
+                    Kabinettschrank mit dunkelbrauner und weißer Fassadenarchitektur aus Ebenholz und Elfenbein im
+                    Inneren des Schrankes und der beiden Türen""" ;
+    dcterms:identifier <http://resources.digicult-museen.net/dam/provided_image/m5ea54539bef06> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rightsHolder <https://ld.zdb-services.de/resource/organisations/DE-MUS-059918> ;
+    dcterms:subject _:Lef92c345384ddd5284ddcf52d073b229 .
+
+[] a dcmitype:Image ;
+    dcterms:description """Detailansicht eines
+                    Kabinettschranks mit gravierter Elfenbeinplakette mit Abbildung des Romulus in Rom""" ;
+    dcterms:identifier <http://resources.digicult-museen.net/dam/provided_image/m5ea5453a0926f> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rightsHolder <https://ld.zdb-services.de/resource/organisations/DE-MUS-059918> ;
+    dcterms:subject _:Lef92c345384ddd5284ddcf52d073b229 .
+
+[] a dcmitype:Image ;
+    dcterms:description """Detailansicht eines
+                    Kabinettschranks mit Fassadenarchitektur einschließlich Säulen, Atlanten und weiterer gravierter
+                    Bauelemente aus Elfenbein auf Ebenholzkonstruktion""" ;
+    dcterms:identifier <http://resources.digicult-museen.net/dam/provided_image/m5ea5453a433bb> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:rightsHolder <https://ld.zdb-services.de/resource/organisations/DE-MUS-059918> ;
+    dcterms:subject _:Lef92c345384ddd5284ddcf52d073b229 .
+
+_:L36198251c5b6ac1abc7aba7dea0c9ae3 a crm:E54_Dimension ;
+    crm:P2_has_type <https://www.wikidata.org/wiki/Q181591> ;
+    crm:P90_has_value 60.9 ;
+    crm:P91_has_unit <https://www.wikidata.org/entity/Q174728> .
+
+_:L42cc9ae943c92837a947d5028a6638dd a crm:E12_Production ;
+    crm:P126_employed <http://vocab.getty.edu/aat/300011857>,
+        <http://vocab.getty.edu/aat/300375333>,
+        <https://d-nb.info/gnd/7697258-6> ;
+    crm:P14_carried_out_by <http://viaf.org/viaf/89840489>,
+        <https://d-nb.info/gnd/1229708928>,
+        <https://d-nb.info/gnd/161108342> ;
+    crm:P32_used_general_technique <http://vocab.getty.edu/aat/300053829> ;
+    crm:P4_has_time-span [ a crm:E52_Time-Span ;
+            crm:P82a_begin_of_the_begin "1596" ;
+            crm:P82b_end_of_the_end "1605" ] ;
+    crm:P7_took_place_at <https://sws.geonames.org/3172394/> .
+
+_:L54102811db5643232364e308472cd4e6 a crm:E54_Dimension ;
+    crm:P2_has_type <http://www.wikidata.org/wiki/Q35059> ;
+    crm:P90_has_value 101.1 ;
+    crm:P91_has_unit <https://www.wikidata.org/entity/Q174728> .
+
+_:L7964d1ab3a5c3453069790ea869840da a crm:E54_Dimension ;
+    crm:P2_has_type <https://www.wikidata.org/entity/Q208826> ;
+    crm:P90_has_value 106 ;
+    crm:P91_has_unit <https://www.wikidata.org/entity/Q174728> .
+
+_:L974bcfc36cea216e3153eb6e94ff63cf a crm:E54_Dimension ;
+    crm:P2_has_type <http://www.wikidata.org/wiki/Q35059> ;
+    crm:P90_has_value 190 ;
+    crm:P91_has_unit <https://www.wikidata.org/entity/Q174728> .
+
+_:L9d8f567fe9844120395ce6344188ca65 a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "1977.20" ;
+    crm:P2_has_type <http://terminology.lido-schema.org/lido00113> .
+
+_:L9e636621e011ad56fc9bc9fcaa39a8e4 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Kabinettschrank, Inv. Nr.: 1977.20"@de .
+
+_:Lef92c345384ddd5284ddcf52d073b229 a crm:E22_Human-Made_Object ;
+    crm:P102_has_title _:L9e636621e011ad56fc9bc9fcaa39a8e4 ;
+    crm:P108i_was_produced_by _:L42cc9ae943c92837a947d5028a6638dd ;
+    crm:P1_is_identified_by _:L9d8f567fe9844120395ce6344188ca65 ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300038888>,
+        <https://d-nb.info/gnd/4039860-2> ;
+    crm:P3_has_note """Die große Welt im kleinen Schrank: Die Fassadenarchitektur
+                        des Kabinettschranks findet ihr Vorbild im antiken Theaterbau. Mit seinem ausgeklügelten System
+                        von Fächern und Schubladen diente er zur Aufbewahrung von gesammelten Kostbarkeiten der
+                        Kunstkammer. Über seine Bestimmung zum funktionalen Möbel hinaus ist der Schrank selbst auch als
+                        Kunstwerk zu verstehen. Die Elfenbeintafeln zeigen ein umfangreiches Bildprogramm: die Gründer
+                        der vier großen Weltreiche des Altertums und die Taten des tugendhaften antiken Helden Herkules.
+                        Die ausziehbare Schreibplatte enthält eine drehbare Weltkarte, die auf die Habsburger verweist
+                        und vermuten lässt, dass das Kabinettmöbel für König Phillipp II. von Spanien angefertigt worden
+                        ist.
+                    """@de ;
+    crm:P43_has_dimension _:L36198251c5b6ac1abc7aba7dea0c9ae3,
+        _:L54102811db5643232364e308472cd4e6,
+        _:L7964d1ab3a5c3453069790ea869840da,
+        _:L974bcfc36cea216e3153eb6e94ff63cf ;
+    crm:P62_depicts <https://iconclass.org/94L> .
+
