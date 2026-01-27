@@ -1,0 +1,423 @@
+[
+  {
+    "@id": "_:9e558ec1fa170886f6e6565ad84e251e",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea54539bef06"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/40b0710466cf8a996c9caabf20dcd37d",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {"@value": "DE-MUS-059918/dc00018494"},
+      {
+        "@language": "de",
+        "@value": "Kabinettschrank, Inv. Nr.: 1977.20"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by": [
+      {"@id": "_:832fa15fa08a5d25177df7e936445b78"},
+      {"@id": "_:55e9271fc48cca5a736d8650635675e3"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@value": "1977.20"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper": [
+      {"@id": "http://graph.nfdi4objects.net/id/1a459b24fd775d8727d45b866dfdd3c4"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by": [
+      {"@id": "_:67ac3ddf2c322328fd00ac11855a5777"},
+      {"@id": "_:c5d242973d48dc957fcebdb9f139d7fd"},
+      {"@id": "_:5fffbf3a9ab0bf7c9ab8c9519b935590"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in": [
+      {"@id": "http://graph.nfdi4objects.net/id/46f277220a442e424ddb30668feb2d74"},
+      {"@value": "DE-MUS-059918/dc00018494"}
+    ]
+  },
+  {
+    "@id": "_:67ac3ddf2c322328fd00ac11855a5777",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to": [
+      {"@id": "_:f794cf8aa5b3f9c3c95504e53c4d077d"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "_:9181900c74f196504a3b2f23847e8405"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {"@value": "Blick in geöffneten Kabinettschrank mit dunkelbrauner und weißer Fassadenarchitektur aus Ebenholz und Elfenbein im Inneren des Schrankes und der beiden Türen"}
+    ]
+  },
+  {
+    "@id": "_:9181900c74f196504a3b2f23847e8405",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E55_Type"]
+  },
+  {
+    "@id": "_:f794cf8aa5b3f9c3c95504e53c4d077d",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E30_Right"]
+  },
+  {
+    "@id": "_:c5d242973d48dc957fcebdb9f139d7fd",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to": [
+      {"@id": "_:f794cf8aa5b3f9c3c95504e53c4d077d"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "_:9181900c74f196504a3b2f23847e8405"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {"@value": "Detailansicht eines Kabinettschranks mit gravierter Elfenbeinplakette mit Abbildung des Romulus in Rom"}
+    ]
+  },
+  {
+    "@id": "_:5fffbf3a9ab0bf7c9ab8c9519b935590",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to": [
+      {"@id": "_:f794cf8aa5b3f9c3c95504e53c4d077d"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "_:9181900c74f196504a3b2f23847e8405"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {"@value": "Detailansicht eines Kabinettschranks mit Fassadenarchitektur einschließlich Säulen, Atlanten und weiterer gravierter Bauelemente aus Elfenbein auf Ebenholzkonstruktion"}
+    ]
+  },
+  {
+    "@id": "_:832fa15fa08a5d25177df7e936445b78",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"],
+    "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension": [
+      {"@id": "_:767d8698404dede5dd3b2adb171b6884"},
+      {"@id": "_:1b6033a986c61d7dd54d3272871a84ff"},
+      {"@id": "_:d56fa0697bb6c3fe923b4051b5a935a9"}
+    ]
+  },
+  {
+    "@id": "_:767d8698404dede5dd3b2adb171b6884",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@language": "de",
+        "@value": "Höhe"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {"@value": "106"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit/skos:Concept/skos:prefLabel": [
+      {"@value": "cm"}
+    ]
+  },
+  {
+    "@id": "_:1b6033a986c61d7dd54d3272871a84ff",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@language": "de",
+        "@value": "Breite"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {"@value": "101,1"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit/skos:Concept/skos:prefLabel": [
+      {"@value": "cm"}
+    ]
+  },
+  {
+    "@id": "_:d56fa0697bb6c3fe923b4051b5a935a9",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@language": "de",
+        "@value": "Tiefe"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {"@value": "60,9"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit/skos:Concept/skos:prefLabel": [
+      {"@value": "cm"}
+    ]
+  },
+  {
+    "@id": "_:55e9271fc48cca5a736d8650635675e3",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"],
+    "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension": [
+      {"@id": "_:767d8698404dede5dd3b2adb171b6884"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by": [
+      {"@value": "Breite: 190 cm (geöffnet)"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/d5d356b7254c3cdf141740883f254a8c",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {"@value": "Curtis, Giovanni Battista de"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "https://d-nb.info/gnd/161108342"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/8c20e0a028784e8e2a3205d7692d824b",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E53_Place"],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {"@id": "https://sws.geonames.org/3172394/"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "https://sws.geonames.org/3172394/"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by": [
+      {"@value": "Neapel"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/0b76bd2d4e8ab18b3f111a74df838d20",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E31_Document"],
+    "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to": [
+      {"@id": "_:df104af203cdc1fc8b2c7870a02ebbc1"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by": [
+      {"@id": "_:5bdde50759a43b2323ad4967075cab53"},
+      {"@id": "_:53784fb82f0ab9b61c30099b4188b57b"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "http://terminology.lido-schema.org/lido00100"},
+      {"@id": "http://terminology.lido-schema.org/lido00141"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@value": "dc00018494"}
+    ]
+  },
+  {
+    "@id": "_:5bdde50759a43b2323ad4967075cab53",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E39_Actor"],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {"@value": "Museum für Kunst und Gewerbe Hamburg"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "http://terminology.lido-schema.org/lido00099"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"}
+    ]
+  },
+  {
+    "@id": "_:53784fb82f0ab9b61c30099b4188b57b",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E39_Actor"],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {"@value": "digiCULT-Verbund eG"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "http://terminology.lido-schema.org/lido00099"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "https://d-nb.info/gnd/16329731-9"}
+    ]
+  },
+  {
+    "@id": "_:df104af203cdc1fc8b2c7870a02ebbc1",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E30_Right"],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "_:80275ed04cde6550f5eebe4c5bf09552"}
+    ]
+  },
+  {
+    "@id": "_:80275ed04cde6550f5eebe4c5bf09552",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E55_Type"]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/46f277220a442e424ddb30668feb2d74",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E31_Document"],
+    "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to": [
+      {"@id": "_:df104af203cdc1fc8b2c7870a02ebbc1"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {"@value": "dc00018494"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "http://graph.nfdi4objects.net/id/cef752aca1e2dbb59a5ee9ea10a52bef"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to": [
+      {"@id": "_:5bdde50759a43b2323ad4967075cab53"},
+      {"@id": "_:53784fb82f0ab9b61c30099b4188b57b"}
+    ]
+  },
+  {
+    "@id": "_:d47cb989c26a6d6475405e1e7c429471",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a0926f"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/446c437501c92f26c9441e55d1f564fe",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E39_Actor"],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {
+        "@language": "de",
+        "@value": "Museum für Kunst und Gewerbe"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://ld.zdb-services.de/resource/organisations/DE-MUS-059918"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/cef752aca1e2dbb59a5ee9ea10a52bef",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E55_Type"]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/ee802ee9f3757d5d2a09893d0aa1b20d",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {"@value": "Fiammingo, Giacomo"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "https://d-nb.info/gnd/1229708928"}
+    ]
+  },
+  {
+    "@id": "_:8686b365d99fa930a8ae201ea4c0cb1f",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@language": "de",
+        "@value": "Breite"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {"@value": "190"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit/skos:Concept/skos:prefLabel": [
+      {"@value": "cm"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/1a459b24fd775d8727d45b866dfdd3c4",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+      "http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {
+        "@language": "de",
+        "@value": "Museum für Kunst und Gewerbe"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "http://terminology.lido-schema.org/lido00099"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://ld.zdb-services.de/resource/organisations/DE-MUS-059918"}
+    ]
+  },
+  {
+    "@id": "_:3181606f9b0f80d7e2c1ae10cefc8c11",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a433bb"}
+    ]
+  },
+  {
+    "@id": "_:f00b8552a6c4a2e6eb18785d74d50e75",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+      "http://www.cidoc-crm.org/cidoc-crm/E11_Modification",
+      "http://www.cidoc-crm.org/cidoc-crm/E12_Production"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {"@id": "http://graph.nfdi4objects.net/id/ee802ee9f3757d5d2a09893d0aa1b20d"},
+      {"@id": "http://graph.nfdi4objects.net/id/d5d356b7254c3cdf141740883f254a8c"},
+      {"@id": "http://graph.nfdi4objects.net/id/1d8c91b4ef27e2a379b98668b050ef6a"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {"@id": "_:38415ce2e252a9e95114b3bdef610b21"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [
+      {
+        "@language": "de",
+        "@value": "Palisander"
+      },
+      {
+        "@language": "de",
+        "@value": "Ebenholz"
+      },
+      {
+        "@language": "de",
+        "@value": "Elfenbein (Material)"
+      },
+      {
+        "@language": "de",
+        "@value": "Gravierung"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {"@id": "_:f9cca0e4e1b2a0f2625a936d32960715"},
+      {"@id": "_:95e5b09f27cb578dae79b9bc41a7969d"},
+      {"@id": "_:2b51298fca86dd51dc04ea104e2eedd0"},
+      {"@value": "um 1600"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://vocab.getty.edu/aat/300375333"},
+      {"@id": "http://www.wikidata.org/entity/Q156005"},
+      {"@id": "http://vocab.getty.edu/aat/300011857"},
+      {"@id": "https://d-nb.info/gnd/4191438-7"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {"@id": "_:847f7a9950ce6bac536060248374de2c"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {"@id": "http://graph.nfdi4objects.net/id/8c20e0a028784e8e2a3205d7692d824b"}
+    ]
+  },
+  {
+    "@id": "_:38415ce2e252a9e95114b3bdef610b21",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E55_Type"]
+  },
+  {
+    "@id": "_:f9cca0e4e1b2a0f2625a936d32960715",
+    "@type": ["http://www.w3.org/2000/01/rdf-schema#Literal"]
+  },
+  {
+    "@id": "_:95e5b09f27cb578dae79b9bc41a7969d",
+    "@type": ["http://www.w3.org/2000/01/rdf-schema#Literal"]
+  },
+  {
+    "@id": "_:2b51298fca86dd51dc04ea104e2eedd0",
+    "@type": ["http://www.w3.org/2000/01/rdf-schema#Literal"]
+  },
+  {
+    "@id": "_:847f7a9950ce6bac536060248374de2c",
+    "@type": ["http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {"@value": "1596"},
+      {"@value": "1605"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [
+      {"@value": "1596"},
+      {"@value": "1605"}
+    ]
+  },
+  {
+    "@id": "http://graph.nfdi4objects.net/id/1d8c91b4ef27e2a379b98668b050ef6a",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by": [
+      {"@value": "Picicaro, Januarius"}
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier": [
+      {"@id": "http://viaf.org/viaf/89840489"}
+    ]
+  }
+]
