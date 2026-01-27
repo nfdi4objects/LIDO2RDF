@@ -21,5 +21,5 @@ Verbundzentrale des GBV
 josef.heers@gbv.de
 
 Andreas Frech  
-University Library of LMU Munich 
+University Library of LMU Munich  
 andreas.frech@ub.uni-muenchen.de
