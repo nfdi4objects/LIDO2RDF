@@ -1,6 +1,7 @@
 # Documentation
 
-For CIDOC CRM also see [CIDOC-CRM in RDF Application Profile. Guidelines how to use CIDOC-CRM in RDF for interoperability](https://nfdi4objects.github.io/crm-rdf-ap/) by Jakob Voß.
+This mapping deals with mapping LIDO 1.1 to the last official release of CIDOC CRM.
+
 
 ## Modeling:
 
@@ -14,3 +15,13 @@ If more specific events are available in CRM, use these (E12 Production, E11 Mod
 ## Usage of blank notes
 
 ## Usage of short cuts
+
+## Useful links:
+
+[CIDOC CRM Last official release](https://cidoc-crm.org/get-last-official-release)
+
+[CRM Compatible Models](https://cidoc-crm.org/collaborations)
+
+[LIDO Primer](https://lido-schema.org/documents/primer/latest/lido-primer.html)
+
+For CIDOC CRM also see [CIDOC-CRM in RDF Application Profile. Guidelines how to use CIDOC-CRM in RDF for interoperability](https://nfdi4objects.github.io/crm-rdf-ap/) by Jakob Voß.
