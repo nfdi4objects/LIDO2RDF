@@ -1,10 +1,15 @@
-# Decisions
+# Documentation
+
+For CIDOC CRM also see [CIDOC-CRM in RDF Application Profile. Guidelines how to use CIDOC-CRM in RDF for interoperability](https://nfdi4objects.github.io/crm-rdf-ap/) by Jakob Voß.
 
 ## Modeling:
 
 LIDO-Bemerkungsfeld (objectDescription): P3 > E62 String
 
 LIDO-Bemerkungsfeld (objectDescription) with further specification: E22 Human-Made-Object -> P70 is documented in -> E31 Document -> P190 has symbolic content -> E62 String
+
+Events and activities with E5 / E7 > P2 has type > E55 – embed LIDO terminology here (embed complete URI here: http://terminology.lido-schema.org/lido00007)
+If more specific events are available in CRM, use these (E12 Production, E11 Modification), then without E55.
 
 ## Usage of blank notes
 
