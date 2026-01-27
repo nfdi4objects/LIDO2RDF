@@ -44,9 +44,6 @@
           <entity>
             <type>crm:E22_Human-Made_Object</type>
           </entity>
-          <if>
-            <or />
-          </if>
         </target_node>
       </domain>
       <link skip="false">
@@ -56,9 +53,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P102_has_title</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -67,9 +61,6 @@
             <entity>
               <type>crm:E35_Title</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -80,9 +71,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P2_has_type</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -91,9 +79,6 @@
             <entity>
               <type>crm:E55</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -104,9 +89,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P2_has_type</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -115,9 +97,6 @@
             <entity>
               <type>E55</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -128,9 +107,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P1_is_identified_by</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -139,9 +115,6 @@
             <entity>
               <type>crm:E42_Identifier</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -152,9 +125,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P3_has_note</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -163,9 +133,6 @@
             <entity>
               <type>crm:E31_Document</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -176,9 +143,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P45_consists_of</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -187,9 +151,6 @@
             <entity>
               <type>crm:E57_Material</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -200,9 +161,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P33_used_specific_technique</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -211,9 +169,6 @@
             <entity>
               <type>crm:E29_Design_or_Procedure</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -224,9 +179,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P43_has_dimension</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -235,9 +187,6 @@
             <entity>
               <type>crm:E54_Dimension</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -248,9 +197,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P12i_was_present_at</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -259,9 +205,6 @@
             <entity>
               <type>crm:E7_Activity</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -272,9 +215,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P12_occurred_in_the_presence_of</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -283,9 +223,6 @@
             <entity>
               <type>crm:E7_Activity</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -296,9 +233,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P1_is_identified_by</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -307,9 +241,6 @@
             <entity>
               <type>crm:E42_Identifier</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -321,32 +252,23 @@
           <entity>
             <type>crm:E5_Event</type>
           </entity>
-          <if>
-            <or />
-          </if>
         </target_node>
       </domain>
       <link skip="false">
         <path>
           <source_relation>
-            <relation>lido:eventType/lido:term</relation>
+            <relation>lido:eventType/lido:conceptID</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P102_has_title</relationship>
-            <if>
-              <or />
-            </if>
+            <relationship>crm:P2_has_type</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>lido:eventType/lido:term</source_node>
+          <source_node>lido:eventType/lido:conceptID</source_node>
           <target_node>
             <entity>
-              <type>crm:E35_Title</type>
+              <type>crm:E55</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -358,9 +280,6 @@
           <entity>
             <type>crm:E54_Dimension</type>
           </entity>
-          <if>
-            <or />
-          </if>
         </target_node>
       </domain>
       <link skip="false">
@@ -370,9 +289,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P2_has_type</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -381,9 +297,6 @@
             <entity>
               <type>rdfs:Literal</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -394,9 +307,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P91_has_unit</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -405,9 +315,6 @@
             <entity>
               <type>rdfs:Literal</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
@@ -418,9 +325,6 @@
           </source_relation>
           <target_relation>
             <relationship>crm:P90_has_value</relationship>
-            <if>
-              <or />
-            </if>
           </target_relation>
         </path>
         <range>
@@ -429,9 +333,6 @@
             <entity>
               <type>rdfs:Literal</type>
             </entity>
-            <if>
-              <or />
-            </if>
           </target_node>
         </range>
       </link>
