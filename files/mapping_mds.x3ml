@@ -151,7 +151,7 @@
             <relation>lido:objectDescriptionWrap/lido:objectDescriptionSet/lido:descriptiveNoteValue</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P70i_is_documented_in</relationship>
+            <relationship>crm:P3_has_note</relationship>
             <if>
               <or />
             </if>
@@ -223,7 +223,7 @@
             <relation>lido:objectMeasurementsWrap/lido:objectMeasurementsSet/lido:objectMeasurements/lido:measurementsSet</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P39i_was_measured_by</relationship>
+            <relationship>crm:P43_has_dimension</relationship>
             <if>
               <or />
             </if>
@@ -233,7 +233,7 @@
           <source_node>lido:objectMeasurementsWrap/lido:objectMeasurementsSet/lido:objectMeasurements/lido:measurementsSet</source_node>
           <target_node>
             <entity>
-              <type>crm:E16_Measurement</type>
+              <type>crm:E54_Dimension</type>
             </entity>
             <if>
               <or />
@@ -356,7 +356,7 @@
         <source_node>lido:measurementsSet</source_node>
         <target_node>
           <entity>
-            <type>crm:E16_Measurement</type>
+            <type>crm:E54_Dimension</type>
           </entity>
           <if>
             <or />
