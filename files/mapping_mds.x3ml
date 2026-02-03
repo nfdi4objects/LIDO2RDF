@@ -285,7 +285,7 @@
           <source_node>lido:eventActor/lido:actorInRole</source_node>
           <target_node>
             <entity>
-              <type>crm:E21_Person</type>
+              <type>crm:E39_Actor</type>
             </entity>
           </target_node>
         </range>
@@ -396,7 +396,7 @@
         <source_node>lido:actor</source_node>
         <target_node>
           <entity>
-            <type>crm:E21_Person</type>
+            <type>crm:E39_Actor</type>
           </entity>
         </target_node>
       </domain>
@@ -442,7 +442,7 @@
         <source_node>lido:actorInRole</source_node>
         <target_node>
           <entity>
-            <type>crm:E21_Person</type>
+            <type>crm:E39_Actor</type>
           </entity>
         </target_node>
       </domain>
@@ -459,7 +459,7 @@
           <source_node>lido:actor</source_node>
           <target_node>
             <entity>
-              <type>crm:E21_Person</type>
+              <type>crm:E39_Actor</type>
             </entity>
           </target_node>
         </range>
