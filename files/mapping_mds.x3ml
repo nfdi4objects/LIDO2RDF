@@ -272,6 +272,24 @@
           </target_node>
         </range>
       </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:eventActor/lido:actorInRole</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P11_had_participant</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:eventActor/lido:actorInRole</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E21_Person</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
     </mapping>
     <mapping skip="false">
       <domain>
@@ -378,6 +396,52 @@
           <target_node>
             <entity>
               <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+    </mapping>
+    <mapping skip="false">
+      <domain>
+        <source_node>lido:actorInRole</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E21_Person</type>
+          </entity>
+        </target_node>
+      </domain>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:actor</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P35i_was_identified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:actor</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E21_Person</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:term</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P102_has_title</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:term</source_node>
+          <target_node>
+            <entity>
+              <type>Literal</type>
             </entity>
           </target_node>
         </range>
