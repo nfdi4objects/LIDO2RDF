@@ -308,6 +308,24 @@
           </target_node>
         </range>
       </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:place</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P7_took_place_at</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:place</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E53_Place</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
     </mapping>
     <mapping skip="false">
       <domain>
@@ -549,6 +567,52 @@
         </path>
         <range>
           <source_node>lido:displayDate</source_node>
+          <target_node>
+            <entity>
+              <type>Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+    </mapping>
+    <mapping skip="false">
+      <domain>
+        <source_node>lido:place</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E53_Place</type>
+          </entity>
+        </target_node>
+      </domain>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:placeID</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P1_is_identified_by</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:placeID</source_node>
+          <target_node>
+            <entity>
+              <type>crm:E53_Place</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:namePlaceSet/lido:appellationValue</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P102_has_title</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:namePlaceSet/lido:appellationValue</source_node>
           <target_node>
             <entity>
               <type>Literal</type>
