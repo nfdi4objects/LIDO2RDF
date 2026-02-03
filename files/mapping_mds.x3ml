@@ -337,5 +337,51 @@
         </range>
       </link>
     </mapping>
+    <mapping skip="false">
+      <domain>
+        <source_node>lido:actor</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E21_Person</type>
+          </entity>
+        </target_node>
+      </domain>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:nameActorSet/lido:appellationValue</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P102_has_title</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:nameActorSet/lido:appellationValue</source_node>
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:actorID</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P48_has_preferred_identifier</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:actorID</source_node>
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+    </mapping>
   </mappings>
 </x3ml>
