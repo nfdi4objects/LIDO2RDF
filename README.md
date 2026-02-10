@@ -8,7 +8,7 @@ The objective of the group is to develop mappings from LIDO XML to CIDOC CRM tri
 
 Initially, the mappings are based on the Minimum Record Recommendation for Museums and Collections of the [AG Minimaldatensatz](www.minimaldatensatz.de) but will be expanded to more elements and classes. An important aspect of the group’s work is the exchange and discussion of mapping approaches within the working group, as well as the further development of the X3ML mapper by the Verbundzentrale Göttingen.
 
-Here you find the mappings and the documentation.
+Here you find the mappings and the documentation - work in progress, so this is a living document.
 
 
 ## Contact:  
@@ -21,5 +21,5 @@ Verbundzentrale des GBV
 josef.heers@gbv.de
 
 Andreas Frech  
-University Library of LMU Munich 
+University Library of LMU Munich  
 andreas.frech@ub.uni-muenchen.de
