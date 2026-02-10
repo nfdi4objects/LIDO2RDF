@@ -1,0 +1,92 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lido_term: <http://terminology.lido-schema.org/> .
+@prefix n4o: <http://graph.nfdi4objects.net/id/> .
+
+n4o:40b0710466cf8a996c9caabf20dcd37d a crm:E22_Human-Made_Object ;
+    crm:P102_has_title "Kabinettschrank, Inv. Nr.: 1977.20"@de ;
+    crm:P12_occurred_in_the_presence_of n4o:f00b8552a6c4a2e6eb18785d74d50e75 ;
+    crm:P12i_was_present_at lido_term:lido00007 ;
+    crm:P1_is_identified_by "1977.20",
+        "DE-MUS-059918/dc00018494" ;
+    crm:P2_has_type <http://obg.vocnet.org/00000883>,
+        <http://vocab.getty.edu/aat/300379868>,
+        <https://term.museum-digital.de/hesys/tag/275> ;
+    crm:P33_used_specific_technique <http://vocab.getty.edu/aat/300011857>,
+        <http://vocab.getty.edu/aat/300375333>,
+        <http://www.wikidata.org/entity/Q156005>,
+        <https://d-nb.info/gnd/4191438-7> ;
+    crm:P3_has_note "Die große Welt im kleinen Schrank: Die Fassadenarchitektur des Kabinettschranks findet ihr Vorbild im antiken Theaterbau. Mit seinem ausgeklügelten System von Fächern und Schubladen diente er zur Aufbewahrung von gesammelten Kostbarkeiten der Kunstkammer. Über seine Bestimmung zum funktionalen Möbel hinaus ist der Schrank selbst auch als Kunstwerk zu verstehen. Die Elfenbeintafeln zeigen ein umfangreiches Bildprogramm: die Gründer der vier großen Weltreiche des Altertums und die Taten des tugendhaften antiken Helden Herkules. Die ausziehbare Schreibplatte enthält eine drehbare Weltkarte, die auf die Habsburger verweist und vermuten lässt, dass das Kabinettmöbel für König Phillipp II. von Spanien angefertigt worden ist."@de ;
+    crm:P43_has_dimension n4o:1b6033a986c61d7dd54d3272871a84ff,
+        n4o:767d8698404dede5dd3b2adb171b6884,
+        n4o:8686b365d99fa930a8ae201ea4c0cb1f,
+        n4o:d56fa0697bb6c3fe923b4051b5a935a9 ;
+    crm:P45_consists_of <http://vocab.getty.edu/aat/300011857>,
+        <http://vocab.getty.edu/aat/300375333>,
+        <http://www.wikidata.org/entity/Q156005>,
+        <https://d-nb.info/gnd/4191438-7> .
+
+n4o:1b6033a986c61d7dd54d3272871a84ff a crm:E54_Dimension ;
+    crm:P2_has_type "Breite"@de ;
+    crm:P90_has_value "101,1" ;
+    crm:P91_has_unit "cm" .
+
+n4o:1d8c91b4ef27e2a379b98668b050ef6a a crm:E39_Actor ;
+    crm:P102_has_title "Picicaro, Januarius" ;
+    crm:P48_has_preferred_identifier <http://viaf.org/viaf/89840489> .
+
+n4o:4e49fce110eebfac97a29001e6aa1a26 a crm:E52_Time-Span ;
+    crm:P1_is_identified_by n4o:847f7a9950ce6bac536060248374de2c ;
+    crm:P3_has_note "um 1600" .
+
+n4o:502ef1c95a87c682eaac94cf4765aeef a crm:E39_Actor ;
+    crm:P102_has_title "Künstler"@de ;
+    crm:P1_is_identified_by n4o:ee802ee9f3757d5d2a09893d0aa1b20d .
+
+n4o:690f0da393e288e5b2d6a759c8e0c9e8 a crm:E39_Actor ;
+    crm:P102_has_title "Graveur"@de ;
+    crm:P1_is_identified_by n4o:1d8c91b4ef27e2a379b98668b050ef6a .
+
+n4o:767d8698404dede5dd3b2adb171b6884 a crm:E54_Dimension ;
+    crm:P2_has_type "Höhe"@de ;
+    crm:P90_has_value "106" ;
+    crm:P91_has_unit "cm" .
+
+n4o:78a3ab30e651718ba5a601bd2bd2b2e5 a crm:E39_Actor ;
+    crm:P102_has_title "Graveur"@de ;
+    crm:P1_is_identified_by n4o:d5d356b7254c3cdf141740883f254a8c .
+
+n4o:847f7a9950ce6bac536060248374de2c a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1596" ;
+    crm:P82b_end_of_the_end "1605" .
+
+n4o:8686b365d99fa930a8ae201ea4c0cb1f a crm:E54_Dimension ;
+    crm:P2_has_type "Breite"@de ;
+    crm:P90_has_value "190" ;
+    crm:P91_has_unit "cm" .
+
+n4o:8c20e0a028784e8e2a3205d7692d824b a crm:E53_Place ;
+    crm:P102_has_title "Neapel" ;
+    crm:P1_is_identified_by <https://sws.geonames.org/3172394/> .
+
+n4o:d56fa0697bb6c3fe923b4051b5a935a9 a crm:E54_Dimension ;
+    crm:P2_has_type "Tiefe"@de ;
+    crm:P90_has_value "60,9" ;
+    crm:P91_has_unit "cm" .
+
+n4o:d5d356b7254c3cdf141740883f254a8c a crm:E39_Actor ;
+    crm:P102_has_title "Curtis, Giovanni Battista de" ;
+    crm:P48_has_preferred_identifier <https://d-nb.info/gnd/161108342> .
+
+n4o:ee802ee9f3757d5d2a09893d0aa1b20d a crm:E39_Actor ;
+    crm:P102_has_title "Fiammingo, Giacomo" ;
+    crm:P48_has_preferred_identifier <https://d-nb.info/gnd/1229708928> .
+
+n4o:f00b8552a6c4a2e6eb18785d74d50e75 a crm:E5_Event,
+        crm:E7_Activity ;
+    crm:P11_had_participant n4o:502ef1c95a87c682eaac94cf4765aeef,
+        n4o:690f0da393e288e5b2d6a759c8e0c9e8,
+        n4o:78a3ab30e651718ba5a601bd2bd2b2e5 ;
+    crm:P2_has_type lido_term:lido00007 ;
+    crm:P4_has_time-span n4o:4e49fce110eebfac97a29001e6aa1a26 ;
+    crm:P7_took_place_at n4o:8c20e0a028784e8e2a3205d7692d824b .
+
