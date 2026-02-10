@@ -452,7 +452,7 @@
             <relation>lido:actor</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P35i_was_identified_by</relationship>
+            <relationship>crm:P1_is_identified_by</relationship>
           </target_relation>
         </path>
         <range>
@@ -498,7 +498,7 @@
             <relation>lido:earliestDate</relation>
           </source_relation>
           <target_relation>
-            <relationship>crm:P81b_begin_of_the_end</relationship>
+            <relationship>crm:P82a_begin_of_the_begin</relationship>
           </target_relation>
         </path>
         <range>
