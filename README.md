@@ -10,6 +10,9 @@ Initially, the mappings are based on the Minimum Record Recommendation for Museu
 
 Here you find the mappings and the documentation - work in progress, so this is a living document.
 
+## Links
+CIDOC-CRM 7.1.3 [RDF-Dateien](https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/tree/master/7.1.3)
+
 
 ## Contact:  
 Anja Gerber  
