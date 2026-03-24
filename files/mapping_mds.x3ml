@@ -339,14 +339,14 @@
       <link skip="false">
         <path>
           <source_relation>
-            <relation>lido:measurementType</relation>
+            <relation>lido:measurementType/skos:Concept[@rdf:about]</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P2_has_type</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>lido:measurementType</source_node>
+          <source_node>lido:measurementType/skos:Concept[@rdf:about]</source_node>
           <target_node>
             <entity>
               <type>rdfs:Literal</type>
@@ -357,14 +357,14 @@
       <link skip="false">
         <path>
           <source_relation>
-            <relation>lido:measurementUnit</relation>
+            <relation>lido:measurementUnit/skos:Concept[@rdf:about]</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P91_has_unit</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>lido:measurementUnit</source_node>
+          <source_node>lido:measurementUnit/skos:Concept[@rdf:about]</source_node>
           <target_node>
             <entity>
               <type>rdfs:Literal</type>
@@ -383,6 +383,42 @@
         </path>
         <range>
           <source_node>lido:measurementValue</source_node>
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:measurementUnit/skos:Concept/skos:prefLabel</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P91_has_unit</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:measurementUnit/skos:Concept/skos:prefLabel</source_node>
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>lido:measurementType/skos:Concept/skos:prefLabel</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>crm:P2_has_type</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>lido:measurementType/skos:Concept/skos:prefLabel</source_node>
           <target_node>
             <entity>
               <type>rdfs:Literal</type>
