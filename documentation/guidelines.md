@@ -13,6 +13,9 @@ Events and activities with E5 / E7 > P2 has type > E55 – embed LIDO terminolog
 If more specific events are available in CRM, use these (E12 Production, E11 Modification), then without E55.
 There are not always event IDs for the respective data records. If one is available, use it. If none is available, one must be generated, see [https://lido-schema.org/schema/v1.1/lido-v1.1.html#event](https://lido-schema.org/schema/v1.1/lido-v1.1.html#event).
 
+Literals can be modeled via P3 using “note” or “rdfs:label”: the information hidden behind the URI should be resolved into a human-readable form.
+For the mapping the usage'rdfs:label' is recommended.
+
 ## Usage of blank notes
 
 ## Usage of short cuts
