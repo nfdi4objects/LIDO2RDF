@@ -18,6 +18,8 @@ There are not always event IDs for the respective data records. If one is availa
 Literals can be modeled via P3 using “note” or “rdfs:label”: the information hidden behind the URI should be resolved into a human-readable form.
 For the mapping the usage'rdfs:label' is recommended.
 
+Actor roles in LIDO > CRM: focussing on th main activities in CRM
+
 ## Usage of blank notes
 
 ## Usage of short cuts
@@ -31,3 +33,5 @@ For the mapping the usage'rdfs:label' is recommended.
 [LIDO Primer](https://lido-schema.org/documents/primer/latest/lido-primer.html)
 
 For CIDOC CRM also see [CIDOC-CRM in RDF Application Profile. Guidelines how to use CIDOC-CRM in RDF for interoperability](https://nfdi4objects.github.io/crm-rdf-ap/) by Jakob Voß.
+
+[Linked Art Model](https://linked.art/model/)
