@@ -1,0 +1,540 @@
+[
+  {
+    "@id": "https://d-nb.info/gnd/4039860-2",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Möbel"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ldb892875d9a1f1101906c587093333a4",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P102_has_title": [
+      {
+        "@id": "_:L9e636621e011ad56fc9bc9fcaa39a8e4"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by": [
+      {
+        "@id": "_:La60b4fadd99403803ec2901662f85d0a"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "_:L9d8f567fe9844120395ce6344188ca65"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300038888"
+      },
+      {
+        "@id": "https://d-nb.info/gnd/4039860-2"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P3_has_note": [
+      {
+        "@language": "de",
+        "@value": "Die große Welt im kleinen Schrank: Die Fassadenarchitektur des Kabinettschranks findet ihr Vorbild im antiken Theaterbau. Mit seinem ausgeklügelten System von Fächern und Schubladen diente er zur Aufbewahrung von gesammelten Kostbarkeiten der Kunstkammer. Über seine Bestimmung zum funktionalen Möbel hinaus ist der Schrank selbst auch als Kunstwerk zu verstehen. Die Elfenbeintafeln zeigen ein umfangreiches Bildprogramm: die Gründer der vier großen Weltreiche des Altertums und die Taten des tugendhaften antiken Helden Herkules. Die ausziehbare Schreibplatte enthält eine drehbare Weltkarte, die auf die Habsburger verweist und vermuten lässt, dass das Kabinettmöbel für König Phillipp II. von Spanien angefertigt worden ist."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension": [
+      {
+        "@id": "_:Lb4bf1d40564f50edec567f32d6e1e8a1"
+      },
+      {
+        "@id": "_:L49db0a858be93a476b003076fad98d0c"
+      },
+      {
+        "@id": "_:Lf42bd1c5ebb3abcecb7391f3e06f67cf"
+      },
+      {
+        "@id": "_:L5858ffbacd94ff685486c20025682abe"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P62_depicts": [
+      {
+        "@id": "https://iconclass.org/94L"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "_:L2a262b7eb94e38e8762106ef80aa7b0d"
+      },
+      {
+        "@id": "_:La8b6597fb7f2ed349d544a155a73b648"
+      },
+      {
+        "@id": "_:Lff1d854ea28c10caccca4a13827bde15"
+      }
+    ]
+  },
+  {
+    "@id": "_:L9e636621e011ad56fc9bc9fcaa39a8e4",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "de",
+        "@value": "Kabinettschrank, Inv. Nr.: 1977.20"
+      }
+    ]
+  },
+  {
+    "@id": "_:L9d8f567fe9844120395ce6344188ca65",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "1977.20"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://terminology.lido-schema.org/lido00113"
+      }
+    ]
+  },
+  {
+    "@id": "_:Lb4bf1d40564f50edec567f32d6e1e8a1",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q208826"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 106
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q174728"
+      }
+    ]
+  },
+  {
+    "@id": "_:L49db0a858be93a476b003076fad98d0c",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://www.wikidata.org/wiki/Q35059"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "101.1"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q174728"
+      }
+    ]
+  },
+  {
+    "@id": "_:Lf42bd1c5ebb3abcecb7391f3e06f67cf",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "https://www.wikidata.org/wiki/Q181591"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "60.9"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q174728"
+      }
+    ]
+  },
+  {
+    "@id": "_:L5858ffbacd94ff685486c20025682abe",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://www.wikidata.org/wiki/Q35059"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P90_has_value": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 190
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q174728"
+      }
+    ]
+  },
+  {
+    "@id": "_:La60b4fadd99403803ec2901662f85d0a",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E12_Production"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of": [
+      {
+        "@id": "_:N214101d71452444f8abc919d287aa146"
+      },
+      {
+        "@id": "_:Nac39de47b830495e8d2524729000b0fe"
+      },
+      {
+        "@id": "_:N26acb39115904cc494e9bcfec3b91061"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P126_employed": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300375333"
+      },
+      {
+        "@id": "https://d-nb.info/gnd/7697258-6"
+      },
+      {
+        "@id": "http://vocab.getty.edu/aat/300011857"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300053829"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span": [
+      {
+        "@id": "_:Lc287003ac0431b341698e08fac15976b"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://sws.geonames.org/3172394/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Lc287003ac0431b341698e08fac15976b",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin": [
+      {
+        "@value": "1596"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82b_end_of_the_end": [
+      {
+        "@value": "1605"
+      }
+    ]
+  },
+  {
+    "@id": "_:N214101d71452444f8abc919d287aa146",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P02_has_range": [
+      {
+        "@id": "https://d-nb.info/gnd/1229708928"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of": [
+      {
+        "@id": "http://ddb.vocnet.org/rolle/r0035"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac39de47b830495e8d2524729000b0fe",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P02_has_range": [
+      {
+        "@id": "https://d-nb.info/gnd/161108342"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300239410"
+      }
+    ]
+  },
+  {
+    "@id": "_:N26acb39115904cc494e9bcfec3b91061",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/PC14_carried_out_by"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P02_has_range": [
+      {
+        "@id": "http://viaf.org/viaf/89840489"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300239410"
+      }
+    ]
+  },
+  {
+    "@id": "_:L2a262b7eb94e38e8762106ef80aa7b0d",
+    "@type": [
+      "https://schema.org/ImageObject"
+    ],
+    "https://schema.org/contentUrl": [
+      {
+        "@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea54539bef06"
+      }
+    ],
+    "https://schema.org/copyrightHolder": [
+      {
+        "@id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Blick in geöffneten Kabinettschrank mit dunkelbrauner und weißer Fassadenarchitektur aus Ebenholz und Elfenbein im Inneren des Schrankes und der beiden Türen"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:La8b6597fb7f2ed349d544a155a73b648",
+    "@type": [
+      "https://schema.org/ImageObject"
+    ],
+    "https://schema.org/contentUrl": [
+      {
+        "@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a0926f"
+      }
+    ],
+    "https://schema.org/copyrightHolder": [
+      {
+        "@id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Detailansicht eines Kabinettschranks mit gravierter Elfenbeinplakette mit Abbildung des Romulus in Rom"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Lff1d854ea28c10caccca4a13827bde15",
+    "@type": [
+      "https://schema.org/ImageObject"
+    ],
+    "https://schema.org/contentUrl": [
+      {
+        "@id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a433bb"
+      }
+    ],
+    "https://schema.org/copyrightHolder": [
+      {
+        "@id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Detailansicht eines Kabinettschranks mit Fassadenarchitektur einschließlich Säulen, Atlanten und weiterer gravierter Bauelemente aus Elfenbein auf Ebenholzkonstruktion"
+      }
+    ],
+    "https://schema.org/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  },
+  {
+    "@id": "http://ddb.vocnet.org/rolle/r0035",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Künstler"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.wikidata.org/wiki/Q35059",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Breite"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.getty.edu/aat/300053829",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Gravierung"
+      }
+    ]
+  },
+  {
+    "@id": "https://iconclass.org/94L",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Geschichte von Hercules (Herakles)"
+      }
+    ]
+  },
+  {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "CC0 1.0 Universell"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.wikidata.org/entity/Q174728",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Zentimeter"
+      }
+    ]
+  },
+  {
+    "@id": "https://d-nb.info/gnd/7697258-6",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Ebenholz"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.wikidata.org/wiki/Q181591",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Tiefe"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.getty.edu/aat/300375333",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Palisander"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.getty.edu/aat/300038888",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Kabinettschrank"
+      },
+      {
+        "@language": "en",
+        "@value": "cabinets (case furniture)"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.getty.edu/aat/300239410",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Graveur"
+      }
+    ]
+  },
+  {
+    "@id": "http://vocab.getty.edu/aat/300011857",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Elfenbein (Material)"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.wikidata.org/entity/Q208826",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Höhe"
+      }
+    ]
+  }
+]

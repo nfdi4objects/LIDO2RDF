@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:schema="https://schema.org/"
+  xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <crm:E22_Human-Made_Object rdf:nodeID="Ldb892875d9a1f1101906c587093333a4">
+    <crm:P102_has_title>
+      <crm:E35_Title rdf:nodeID="L9e636621e011ad56fc9bc9fcaa39a8e4">
+        <crm:P190_has_symbolic_content xml:lang="de">Kabinettschrank, Inv. Nr.: 1977.20</crm:P190_has_symbolic_content>
+      </crm:E35_Title>
+    </crm:P102_has_title>
+    <crm:P2_has_type>
+      <crm:E55_Type rdf:about="http://vocab.getty.edu/aat/300038888">
+        <rdfs:label xml:lang="de">Kabinettschrank</rdfs:label>
+        <rdfs:label xml:lang="en">cabinets (case furniture)</rdfs:label>
+      </crm:E55_Type>
+    </crm:P2_has_type>
+    <crm:P2_has_type>
+      <crm:E55_Type rdf:about="https://d-nb.info/gnd/4039860-2">
+        <rdfs:label xml:lang="de">Möbel</rdfs:label>
+      </crm:E55_Type>
+    </crm:P2_has_type>
+    <crm:P1_is_identified_by>
+      <crm:E42_Identifier rdf:nodeID="L9d8f567fe9844120395ce6344188ca65">
+        <crm:P190_has_symbolic_content>1977.20</crm:P190_has_symbolic_content>
+        <crm:P2_has_type rdf:resource="http://terminology.lido-schema.org/lido00113"/>
+      </crm:E42_Identifier>
+    </crm:P1_is_identified_by>
+    <crm:P3_has_note xml:lang="de">Die große Welt im kleinen Schrank: Die Fassadenarchitektur des Kabinettschranks findet ihr Vorbild im antiken Theaterbau. Mit seinem ausgeklügelten System von Fächern und Schubladen diente er zur Aufbewahrung von gesammelten Kostbarkeiten der Kunstkammer. Über seine Bestimmung zum funktionalen Möbel hinaus ist der Schrank selbst auch als Kunstwerk zu verstehen. Die Elfenbeintafeln zeigen ein umfangreiches Bildprogramm: die Gründer der vier großen Weltreiche des Altertums und die Taten des tugendhaften antiken Helden Herkules. Die ausziehbare Schreibplatte enthält eine drehbare Weltkarte, die auf die Habsburger verweist und vermuten lässt, dass das Kabinettmöbel für König Phillipp II. von Spanien angefertigt worden ist.</crm:P3_has_note>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:nodeID="Lb4bf1d40564f50edec567f32d6e1e8a1">
+        <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="https://www.wikidata.org/entity/Q174728"/>
+        <crm:P2_has_type rdf:resource="https://www.wikidata.org/entity/Q208826"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:nodeID="L49db0a858be93a476b003076fad98d0c">
+        <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101.1</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="https://www.wikidata.org/entity/Q174728"/>
+        <crm:P2_has_type rdf:resource="http://www.wikidata.org/wiki/Q35059"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:nodeID="Lf42bd1c5ebb3abcecb7391f3e06f67cf">
+        <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.9</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="https://www.wikidata.org/entity/Q174728"/>
+        <crm:P2_has_type rdf:resource="https://www.wikidata.org/wiki/Q181591"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:nodeID="L5858ffbacd94ff685486c20025682abe">
+        <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="https://www.wikidata.org/entity/Q174728"/>
+        <crm:P2_has_type rdf:resource="http://www.wikidata.org/wiki/Q35059"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:nodeID="La60b4fadd99403803ec2901662f85d0a">
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:nodeID="Lc287003ac0431b341698e08fac15976b">
+            <crm:P82a_begin_of_the_begin>1596</crm:P82a_begin_of_the_begin>
+            <crm:P82b_end_of_the_end>1605</crm:P82b_end_of_the_end>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P01i_is_domain_of>
+          <crm:PC14_carried_out_by rdf:nodeID="N214101d71452444f8abc919d287aa146">
+            <crm:P02_has_range rdf:resource="https://d-nb.info/gnd/1229708928"/>
+            <crm:P14.1_in_the_role_of rdf:resource="http://ddb.vocnet.org/rolle/r0035"/>
+          </crm:PC14_carried_out_by>
+        </crm:P01i_is_domain_of>
+        <crm:P01i_is_domain_of>
+          <crm:PC14_carried_out_by rdf:nodeID="Nac39de47b830495e8d2524729000b0fe">
+            <crm:P02_has_range rdf:resource="https://d-nb.info/gnd/161108342"/>
+            <crm:P14.1_in_the_role_of rdf:resource="http://vocab.getty.edu/aat/300239410"/>
+          </crm:PC14_carried_out_by>
+        </crm:P01i_is_domain_of>
+        <crm:P01i_is_domain_of>
+          <crm:PC14_carried_out_by rdf:nodeID="N26acb39115904cc494e9bcfec3b91061">
+            <crm:P02_has_range rdf:resource="http://viaf.org/viaf/89840489"/>
+            <crm:P14.1_in_the_role_of rdf:resource="http://vocab.getty.edu/aat/300239410"/>
+          </crm:PC14_carried_out_by>
+        </crm:P01i_is_domain_of>
+        <crm:P7_took_place_at rdf:resource="https://sws.geonames.org/3172394/"/>
+        <crm:P126_employed rdf:resource="http://vocab.getty.edu/aat/300375333"/>
+        <crm:P126_employed rdf:resource="https://d-nb.info/gnd/7697258-6"/>
+        <crm:P126_employed rdf:resource="http://vocab.getty.edu/aat/300011857"/>
+        <crm:P32_used_general_technique rdf:resource="http://vocab.getty.edu/aat/300053829"/>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P62_depicts>
+      <crm:E55_Type rdf:about="https://iconclass.org/94L">
+        <rdfs:label xml:lang="de">Geschichte von Hercules (Herakles)</rdfs:label>
+      </crm:E55_Type>
+    </crm:P62_depicts>
+    <schema:image>
+      <schema:ImageObject rdf:nodeID="L2a262b7eb94e38e8762106ef80aa7b0d">
+        <schema:contentUrl rdf:resource="http://resources.digicult-museen.net/dam/provided_image/m5ea54539bef06"/>
+        <schema:description>Blick in geöffneten Kabinettschrank mit dunkelbrauner und weißer Fassadenarchitektur aus Ebenholz und Elfenbein im Inneren des Schrankes und der beiden Türen</schema:description>
+        <schema:copyrightHolder rdf:resource="https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"/>
+        <schema:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+      </schema:ImageObject>
+    </schema:image>
+    <schema:image>
+      <schema:ImageObject rdf:nodeID="La8b6597fb7f2ed349d544a155a73b648">
+        <schema:contentUrl rdf:resource="http://resources.digicult-museen.net/dam/provided_image/m5ea5453a0926f"/>
+        <schema:description>Detailansicht eines Kabinettschranks mit gravierter Elfenbeinplakette mit Abbildung des Romulus in Rom</schema:description>
+        <schema:copyrightHolder rdf:resource="https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"/>
+        <schema:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+      </schema:ImageObject>
+    </schema:image>
+    <schema:image>
+      <schema:ImageObject rdf:nodeID="Lff1d854ea28c10caccca4a13827bde15">
+        <schema:contentUrl rdf:resource="http://resources.digicult-museen.net/dam/provided_image/m5ea5453a433bb"/>
+        <schema:description>Detailansicht eines Kabinettschranks mit Fassadenarchitektur einschließlich Säulen, Atlanten und weiterer gravierter Bauelemente aus Elfenbein auf Ebenholzkonstruktion</schema:description>
+        <schema:copyrightHolder rdf:resource="https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"/>
+        <schema:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+      </schema:ImageObject>
+    </schema:image>
+  </crm:E22_Human-Made_Object>
+  <crm:E55_Type rdf:about="http://vocab.getty.edu/aat/300239410">
+    <rdfs:label xml:lang="de">Graveur</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="http://vocab.getty.edu/aat/300053829">
+    <rdfs:label xml:lang="de">Gravierung</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="http://vocab.getty.edu/aat/300011857">
+    <rdfs:label xml:lang="de">Elfenbein (Material)</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="https://d-nb.info/gnd/7697258-6">
+    <rdfs:label xml:lang="de">Ebenholz</rdfs:label>
+  </crm:E55_Type>
+  <crm:E58_Measurement_Unit rdf:about="https://www.wikidata.org/entity/Q174728">
+    <rdfs:label xml:lang="de">Zentimeter</rdfs:label>
+  </crm:E58_Measurement_Unit>
+  <crm:E55_Type rdf:about="http://ddb.vocnet.org/rolle/r0035">
+    <rdfs:label xml:lang="de">Künstler</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="http://www.wikidata.org/wiki/Q35059">
+    <rdfs:label xml:lang="de">Breite</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="https://creativecommons.org/publicdomain/zero/1.0/">
+    <rdfs:label xml:lang="de">CC0 1.0 Universell</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="http://vocab.getty.edu/aat/300375333">
+    <rdfs:label xml:lang="de">Palisander</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="https://www.wikidata.org/entity/Q208826">
+    <rdfs:label xml:lang="de">Höhe</rdfs:label>
+  </crm:E55_Type>
+  <crm:E55_Type rdf:about="https://www.wikidata.org/wiki/Q181591">
+    <rdfs:label xml:lang="de">Tiefe</rdfs:label>
+  </crm:E55_Type>
+</rdf:RDF>

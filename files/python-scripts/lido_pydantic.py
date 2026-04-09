@@ -130,6 +130,11 @@ class ConceptComplexType(LidoRecord):
 
         return None
 
+    def get_terms(self):
+        if self.concept is not None:
+            return [term for term in self.concept.prefLabel]
+        return [term for term in self.term]
+
 
 class ObjectWorkType(ConceptComplexType):
     type: str | None = attr('type', 'lido', default=None)
