@@ -293,14 +293,14 @@
       <link skip="false">
         <path>
           <source_relation>
-            <relation>lido:eventDate</relation>
+            <relation>lido:eventDate/lido:date</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>lido:eventDate</source_node>
+          <source_node>lido:eventDate/lido:date</source_node>
           <target_node>
             <entity>
               <type>crm:E52_Time-Span</type>
@@ -557,52 +557,6 @@
         </path>
         <range>
           <source_node>lido:latestDate</source_node>
-          <target_node>
-            <entity>
-              <type>Literal</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-    </mapping>
-    <mapping skip="false">
-      <domain>
-        <source_node>lido:eventDate</source_node>
-        <target_node>
-          <entity>
-            <type>crm:E52_Time-Span</type>
-          </entity>
-        </target_node>
-      </domain>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:date</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P1_is_identified_by</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:date</source_node>
-          <target_node>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:displayDate</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P3_has_note</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:displayDate</source_node>
           <target_node>
             <entity>
               <type>Literal</type>
