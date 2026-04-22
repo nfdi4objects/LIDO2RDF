@@ -1,2 +1,4 @@
 rdflib
 pydantic-xml
+pyld
+requests

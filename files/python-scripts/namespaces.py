@@ -22,6 +22,7 @@ class CRM(DefinedNamespace):
     E52_Time_Span: URIRef = URIRef('http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span')
     E53_Place: URIRef
     E54_Dimension: URIRef
+    E55_Type: URIRef
     E56_Language: URIRef
     E58_Measurement_Unit: URIRef
     E74_Group: URIRef
