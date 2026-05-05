@@ -1,13 +1,15 @@
 import argparse
+import json
 import logging
 import os
 from datetime import datetime
 from itertools import chain
 
-from rdflib import Graph, BNode, Literal, RDF, URIRef, XSD, SDO, DCTERMS, DCMITYPE
+from pyld import jsonld
+from rdflib import Graph, BNode, Literal, RDF, URIRef, XSD, SDO, DCTERMS, DCMITYPE, RDFS
 from rdflib.term import Identifier
 
-from lido_pydantic import Lido, is_url
+from lido_pydantic import Lido, is_url, ConceptComplexType
 from namespaces import CRM
 
 type Triple = tuple[Identifier, str | Identifier, str | Identifier]
@@ -33,13 +35,32 @@ def object_title(lido: Lido, subject: Identifier) -> list[Triple]:
     return triplets
 
 
+def _handle_concept(concept: ConceptComplexType, triplets: list[Triple], rdf_type=CRM.E55_Type) -> URIRef | None:
+    uri = concept.get_concept_uri()
+    terms = concept.get_terms()
+
+    if uri is not None:
+        if len(terms) > 0:
+            triplets.append((URIRef(uri), RDF.type, rdf_type))
+            for term in terms:
+                triplets.append((URIRef(uri), RDFS.label, Literal(term.text, lang=term.lang)))
+        return URIRef(uri)
+
+    return None
+
+
 def object_type(lido: Lido, subject: Identifier) -> list[Triple]:
     triplets: list[Triple] = []
 
     for object_work_type in lido.descriptiveMetadata.objectClassificationWrap.objectWorkTypeWrap.objectWorkType:
-        uri = object_work_type.get_concept_uri()
-        if uri is not None:
-            triplets.append((subject, CRM.P2_has_type, URIRef(uri)))
+        concept = _handle_concept(object_work_type, triplets)
+        if concept is not None:
+            triplets.append((subject, CRM.P2_has_type, concept))
+
+            # type concept as objekt work type
+            # triplets.append((concept, CRM.P2_has_type, URIRef('http://vocab.getty.edu/aat/300435443')))
+            # triplets.append((URIRef('http://vocab.getty.edu/aat/300435443'), RDF.type, CRM.E55_Type))
+            # triplets.append((URIRef('http://vocab.getty.edu/aat/300435443'), RDFS.label, Literal('object/work type', 'en')))
 
     if len(triplets) == 0:
         logging.error(f"{lido.get_record_id()}: No object type found; an object type is mandatory.")
@@ -54,15 +75,16 @@ def classifications(lido: Lido, subject: Identifier) -> list[Triple]:
         return triplets
 
     for classification in lido.descriptiveMetadata.objectClassificationWrap.classificationWrap.classification:
-        uri = classification.get_concept_uri()
-        if uri is not None:
-            """Legacy Lido 1.0 handling, exclude material from being mapped as "has_type". 
-            Mapping as "consists_of" is done in material function."""
-            if classification.type in ['http://terminology.lido-schema.org/lido00132',
-                                       'http://terminology.lido-schema.org/lido00513']:
-                continue
+        """Legacy Lido 1.0 handling, exclude material from being mapped as "has_type". 
+        Mapping as "consists_of" is done in material function."""
+        if classification.type in ['http://terminology.lido-schema.org/lido00132',
+                                   'http://terminology.lido-schema.org/lido00513']:
+            continue
 
-            triplets.append((subject, CRM.P2_has_type, URIRef(uri)))
+        concept = _handle_concept(classification, triplets)
+        if concept is not None:
+            triplets.append((subject, CRM.P2_has_type, concept))
+
 
     if len(triplets) == 0:
         logging.warning(f"{lido.get_record_id()}: No classification found; a classification is recommended.")
@@ -123,8 +145,14 @@ def measurement(lido: Lido, subject: Identifier) -> list[Triple]:
             triplets.append((subject, CRM.P43_has_dimension, node))
             triplets.append((node, RDF.type, CRM.E54_Dimension))
             triplets.append((node, CRM.P90_has_value, Literal(value, datatype=datatype)))
-            triplets.append((node, CRM.P91_has_unit, URIRef(str(measurements_set.measurementUnit.get_concept_uri()))))
-            triplets.append((node, CRM.P2_has_type, URIRef(str(measurements_set.measurementType.get_concept_uri()))))
+
+            unit_concept = _handle_concept(measurements_set.measurementUnit, triplets, CRM.E58_Measurement_Unit)
+            if unit_concept is not None:
+                triplets.append((node, CRM.P91_has_unit, unit_concept))
+
+            type_concept = _handle_concept(measurements_set.measurementType, triplets)
+            if type_concept is not None:
+                triplets.append((node, CRM.P2_has_type, type_concept))
 
     if len(triplets) == 0:
         logging.warning(f"{lido.get_record_id()}: No measurements found for, measurements are recommended.")
@@ -143,14 +171,16 @@ def material(lido: Lido, subject: Identifier) -> list[Triple]:
             for term_material_tech in materials_tech.termMaterialsTech:
                 if term_material_tech.type in ['http://terminology.lido-schema.org/lido00132',
                                                'http://terminology.lido-schema.org/lido00513']:
-                    triplets.append((subject, CRM.P45_consists_of, URIRef(str(term_material_tech.get_concept_uri()))))
+                    concept = _handle_concept(term_material_tech, triplets)
+                    if concept is not None:
+                        triplets.append((subject, CRM.P45_consists_of, concept))
 
     if lido.descriptiveMetadata.objectClassificationWrap.classificationWrap is not None:
         for classification in lido.descriptiveMetadata.objectClassificationWrap.classificationWrap.classification:
-            uri = classification.get_concept_uri()
-            if uri is not None and classification.type in ['http://terminology.lido-schema.org/lido00132',
+            concept = _handle_concept(classification, triplets)
+            if concept is not None and classification.type in ['http://terminology.lido-schema.org/lido00132',
                                                            'http://terminology.lido-schema.org/lido00513']:
-                triplets.append((subject, CRM.P45_consists_of, URIRef(uri)))
+                triplets.append((subject, CRM.P45_consists_of, concept))
 
     if len(triplets) == 0:
         logging.warning(f"{lido.get_record_id()}: No object material found, an object material is recommended.")
@@ -167,8 +197,9 @@ def technic(lido: Lido, subject: Identifier) -> list[Triple]:
     for object_materials_tech_set in lido.descriptiveMetadata.objectIdentificationWrap.objectMaterialsTechWrap.objectMaterialsTechSet:
         for materials_tech in object_materials_tech_set.materialsTech:
             for term_material_tech in materials_tech.termMaterialsTech:
-                if term_material_tech.type == 'http://terminology.lido-schema.org/lido00131':
-                    triplets.append((subject, CRM.P2_has_type, URIRef(str(term_material_tech.get_concept_uri()))))
+                concept = _handle_concept(term_material_tech, triplets)
+                if term_material_tech.type == 'http://terminology.lido-schema.org/lido00131' and concept is not None:
+                    triplets.append((subject, CRM.P2_has_type, concept))
 
     if len(triplets) == 0:
         logging.warning(f"{lido.get_record_id()}: No object technic found, technic is recommended.")
@@ -204,12 +235,13 @@ def event(lido: Lido, subject: Identifier) -> list[Triple]:
             for event_actor in event_set.event.eventActor:
                 if any(event_actor.actorInRole.actor.actorID):
                     actor_id = event_actor.actorInRole.actor.actorID[0]
-                    if any(event_actor.actorInRole.roleActor):
-                        role_actor_uri = event_actor.actorInRole.roleActor[0].get_concept_uri()
-                        actor_in_role = BNode(event_actor.actorInRole.get_hash())
+                    role_actor_concept = _handle_concept(event_actor.actorInRole.roleActor[0], triplets)
+
+                    if role_actor_concept is not None:
+                        actor_in_role = BNode()
                         triplets.append((actor_in_role, RDF.type, CRM.PC14_carried_out_by))
                         triplets.append((actor_in_role, CRM.P02_has_range, URIRef(actor_id.text.strip())))
-                        triplets.append((actor_in_role, CRM.P14_1_in_the_role_of, URIRef(role_actor_uri)))
+                        triplets.append((actor_in_role, CRM.P14_1_in_the_role_of, role_actor_concept))
                         triplets.append((event_node, CRM.P01i_is_domain_of, actor_in_role))
                     else:
                         triplets.append((event_node, CRM.P14_carried_out_by, URIRef(actor_id.text.strip())))
@@ -222,12 +254,11 @@ def event(lido: Lido, subject: Identifier) -> list[Triple]:
             for event_material_tech in event_set.event.eventMaterialsTech:
                 for material_tech in event_material_tech.materialsTech:
                     for term_material_tech in material_tech.termMaterialsTech:
-                        if term_material_tech.type == 'http://terminology.lido-schema.org/lido00132':
-                            triplets.append(
-                                (event_node, CRM.P126_employed, URIRef(str(term_material_tech.get_concept_uri()))))
-                        if term_material_tech.type == 'http://terminology.lido-schema.org/lido00131':
-                            triplets.append((event_node, CRM.P32_used_general_technique,
-                                             URIRef(str(term_material_tech.get_concept_uri()))))
+                        term_material_tech_concept = _handle_concept(term_material_tech, triplets)
+                        if term_material_tech.type == 'http://terminology.lido-schema.org/lido00132' and term_material_tech_concept is not None:
+                            triplets.append((event_node, CRM.P126_employed, term_material_tech_concept))
+                        if term_material_tech.type == 'http://terminology.lido-schema.org/lido00131' and term_material_tech_concept is not None:
+                            triplets.append((event_node, CRM.P32_used_general_technique, term_material_tech_concept))
 
     if len(triplets) == 0:
         logging.error(f"{lido.get_record_id()}: No event found, at least one event is mandatory.")
@@ -253,12 +284,16 @@ def subject_keyword(lido: Lido, subject: Identifier) -> list[Triple]:
         if subject_set.subject.type in ['http://terminology.lido-schema.org/lido00745',
                                         'http://terminology.lido-schema.org/lido00525']:
             for subject_concept in subject_set.subject.subjectConcept:
-                triplets.append((subject, CRM.P62_depicts, URIRef(str(subject_concept.get_concept_uri()))))
+                concept = _handle_concept(subject_concept, triplets)
+                if concept is not None:
+                    triplets.append((subject, CRM.P62_depicts, concept))
 
         # identification
         if subject_set.subject.type == 'http://terminology.lido-schema.org/lido00136':
             for subject_concept in subject_set.subject.subjectConcept:
-                triplets.append((subject, CRM.P2_has_type, URIRef(str(subject_concept.get_concept_uri()))))
+                concept = _handle_concept(subject_concept, triplets)
+                if concept is not None:
+                    triplets.append((subject, CRM.P2_has_type, concept))
 
         # interpretation
         if subject_set.subject.type == 'http://terminology.lido-schema.org/lido00524':
@@ -266,7 +301,9 @@ def subject_keyword(lido: Lido, subject: Identifier) -> list[Triple]:
             triplets.append((subject, CRM.P128_carries, node))
             triplets.append((node, RDF.type, CRM.E36_Visual_Item))
             for subject_concept in subject_set.subject.subjectConcept:
-                triplets.append((node, CRM.P129_is_about, URIRef(str(subject_concept.get_concept_uri()))))
+                concept = _handle_concept(subject_concept, triplets)
+                if concept is not None:
+                    triplets.append((subject, CRM.P129_is_about, concept))
 
     if len(triplets) == 0:
         logging.warning(f"{lido.get_record_id()}: No subject keyword found, a subject keyword is recommended.")
@@ -319,9 +356,9 @@ def media(lido: Lido, subject: Identifier, as_dc: bool = False) -> list[Triple]:
 
             # license
             for rights_type in rights_resource.rightsType:
-                if rights_type.get_concept_uri() is not None:
-                    triplets.append(
-                        (node, DCTERMS.license if as_dc else SDO.license, URIRef(rights_type.get_concept_uri())))
+                concept = _handle_concept(rights_type, triplets)
+                if concept is not None:
+                    triplets.append((node, DCTERMS.license if as_dc else SDO.license, concept))
 
     if len(triplets) == 0:
         logging.error(f"{lido.get_record_id()}: No media file found, a media file is mandatory.")
@@ -370,5 +407,16 @@ if __name__ == '__main__':
 
         g = mds_lido_2_rdf(lido)
 
-        g.serialize(f'{os.path.splitext(args.output)[0]}.ttl', format='turtle')
-        g.serialize(f'{os.path.splitext(args.output)[0]}.xml', format='pretty-xml', encoding='utf-8')
+        file_name = os.path.splitext(args.output)[0]
+
+        g.serialize(f'{file_name}.ttl', format='turtle')
+        g.serialize(f'{file_name}.xml', format='pretty-xml', encoding='utf-8')
+        g.serialize(f'{file_name}.json', format='json-ld', encoding='utf-8')
+
+        # linked-art JSON-LD
+        frame = {'@context': 'https://linked.art/ns/v1/linked-art.json', '@type': str(CRM.E22_Human_Made_Object)}
+        doc = json.loads(g.serialize(format='json-ld'))
+
+        framed = jsonld.frame(doc, frame)
+        with open(f'{file_name}_linked-art-context.json', 'w') as json_file:
+            json.dump(framed, json_file, indent=2)

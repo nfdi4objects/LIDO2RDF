@@ -293,14 +293,14 @@
       <link skip="false">
         <path>
           <source_relation>
-            <relation>lido:eventDate</relation>
+            <relation>lido:eventDate/lido:date</relation>
           </source_relation>
           <target_relation>
             <relationship>crm:P4_has_time-span</relationship>
           </target_relation>
         </path>
         <range>
-          <source_node>lido:eventDate</source_node>
+          <source_node>lido:eventDate/lido:date</source_node>
           <target_node>
             <entity>
               <type>crm:E52_Time-Span</type>
@@ -383,42 +383,6 @@
         </path>
         <range>
           <source_node>lido:measurementValue</source_node>
-          <target_node>
-            <entity>
-              <type>rdfs:Literal</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:measurementUnit/skos:Concept/skos:prefLabel</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P91_has_unit</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:measurementUnit/skos:Concept/skos:prefLabel</source_node>
-          <target_node>
-            <entity>
-              <type>rdfs:Literal</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:measurementType/skos:Concept/skos:prefLabel</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P2_has_type</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:measurementType/skos:Concept/skos:prefLabel</source_node>
           <target_node>
             <entity>
               <type>rdfs:Literal</type>
@@ -567,52 +531,6 @@
     </mapping>
     <mapping skip="false">
       <domain>
-        <source_node>lido:eventDate</source_node>
-        <target_node>
-          <entity>
-            <type>crm:E52_Time-Span</type>
-          </entity>
-        </target_node>
-      </domain>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:date</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P1_is_identified_by</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:date</source_node>
-          <target_node>
-            <entity>
-              <type>crm:E52_Time-Span</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-      <link skip="false">
-        <path>
-          <source_relation>
-            <relation>lido:displayDate</relation>
-          </source_relation>
-          <target_relation>
-            <relationship>crm:P3_has_note</relationship>
-          </target_relation>
-        </path>
-        <range>
-          <source_node>lido:displayDate</source_node>
-          <target_node>
-            <entity>
-              <type>Literal</type>
-            </entity>
-          </target_node>
-        </range>
-      </link>
-    </mapping>
-    <mapping skip="false">
-      <domain>
         <source_node>lido:place</source_node>
         <target_node>
           <entity>
@@ -652,6 +570,62 @@
           <target_node>
             <entity>
               <type>Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+    </mapping>
+    <mapping skip="false">
+      <domain>
+        <source_node>skos:Concept[@rdf:about]</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E55_Type</type>
+          </entity>
+        </target_node>
+      </domain>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>skos:prefLabel</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>rdfs:label</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node>skos:prefLabel</source_node>
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
+            </entity>
+          </target_node>
+        </range>
+      </link>
+    </mapping>
+    <mapping skip="false">
+      <domain>
+        <source_node>lido:measurementUnit/skos:Concept[@rdf:about]</source_node>
+        <target_node>
+          <entity>
+            <type>crm:E58_Measurement_Unit</type>
+          </entity>
+        </target_node>
+      </domain>
+      <link skip="false">
+        <path>
+          <source_relation>
+            <relation>skos:prefLabel</relation>
+          </source_relation>
+          <target_relation>
+            <relationship>rdfs:label</relationship>
+          </target_relation>
+        </path>
+        <range>
+          <source_node />
+          <target_node>
+            <entity>
+              <type>rdfs:Literal</type>
             </entity>
           </target_node>
         </range>

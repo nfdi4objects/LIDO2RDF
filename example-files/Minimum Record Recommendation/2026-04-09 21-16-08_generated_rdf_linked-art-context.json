@@ -1,0 +1,266 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "type": "HumanMadeObject",
+  "title": [
+    {
+      "type": "Title",
+      "content": {
+        "@language": "de",
+        "@value": "Kabinettschrank, Inv. Nr.: 1977.20"
+      }
+    }
+  ],
+  "produced_by": {
+    "type": "Production",
+    "crm:P01i_is_domain_of": [
+      {
+        "type": "crm:PC14_carried_out_by",
+        "crm:P02_has_range": {
+          "id": "https://d-nb.info/gnd/1229708928"
+        },
+        "crm:P14.1_in_the_role_of": {
+          "id": "http://ddb.vocnet.org/rolle/r0035",
+          "type": "Type",
+          "_label": {
+            "@language": "de",
+            "@value": "K\u00fcnstler"
+          }
+        }
+      },
+      {
+        "type": "crm:PC14_carried_out_by",
+        "crm:P02_has_range": {
+          "id": "https://d-nb.info/gnd/161108342"
+        },
+        "crm:P14.1_in_the_role_of": {
+          "id": "http://vocab.getty.edu/aat/300239410",
+          "type": "Type",
+          "_label": {
+            "@language": "de",
+            "@value": "Graveur"
+          }
+        }
+      },
+      {
+        "type": "crm:PC14_carried_out_by",
+        "crm:P02_has_range": {
+          "id": "http://viaf.org/viaf/89840489"
+        },
+        "crm:P14.1_in_the_role_of": {
+          "id": "http://vocab.getty.edu/aat/300239410"
+        }
+      }
+    ],
+    "employed": [
+      {
+        "id": "http://vocab.getty.edu/aat/300375333",
+        "type": "Type",
+        "_label": {
+          "@language": "de",
+          "@value": "Palisander"
+        }
+      },
+      {
+        "id": "https://d-nb.info/gnd/7697258-6",
+        "type": "Type",
+        "_label": {
+          "@language": "de",
+          "@value": "Ebenholz"
+        }
+      },
+      {
+        "id": "http://vocab.getty.edu/aat/300011857",
+        "type": "Type",
+        "_label": {
+          "@language": "de",
+          "@value": "Elfenbein (Material)"
+        }
+      }
+    ],
+    "technique": [
+      {
+        "id": "http://vocab.getty.edu/aat/300053829",
+        "type": "Type",
+        "_label": {
+          "@language": "de",
+          "@value": "Gravierung"
+        }
+      }
+    ],
+    "timespan": {
+      "type": "TimeSpan",
+      "crm:P82a_begin_of_the_begin": "1596",
+      "crm:P82b_end_of_the_end": "1605"
+    },
+    "took_place_at": [
+      "https://sws.geonames.org/3172394/"
+    ]
+  },
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "content": "1977.20",
+      "classified_as": [
+        "http://terminology.lido-schema.org/lido00113"
+      ]
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300038888",
+      "type": "Type",
+      "_label": [
+        {
+          "@language": "de",
+          "@value": "Kabinettschrank"
+        },
+        {
+          "@language": "en",
+          "@value": "cabinets (case furniture)"
+        }
+      ]
+    },
+    {
+      "id": "https://d-nb.info/gnd/4039860-2",
+      "type": "Type",
+      "_label": {
+        "@language": "de",
+        "@value": "M\u00f6bel"
+      }
+    }
+  ],
+  "note": {
+    "@language": "de",
+    "@value": "Die gro\u00dfe Welt im kleinen Schrank: Die Fassadenarchitektur des Kabinettschranks findet ihr Vorbild im antiken Theaterbau. Mit seinem ausgekl\u00fcgelten System von F\u00e4chern und Schubladen diente er zur Aufbewahrung von gesammelten Kostbarkeiten der Kunstkammer. \u00dcber seine Bestimmung zum funktionalen M\u00f6bel hinaus ist der Schrank selbst auch als Kunstwerk zu verstehen. Die Elfenbeintafeln zeigen ein umfangreiches Bildprogramm: die Gr\u00fcnder der vier gro\u00dfen Weltreiche des Altertums und die Taten des tugendhaften antiken Helden Herkules. Die ausziehbare Schreibplatte enth\u00e4lt eine drehbare Weltkarte, die auf die Habsburger verweist und vermuten l\u00e4sst, dass das Kabinettm\u00f6bel f\u00fcr K\u00f6nig Phillipp II. von Spanien angefertigt worden ist."
+  },
+  "dimension": [
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "https://www.wikidata.org/entity/Q208826",
+          "type": "Type",
+          "_label": {
+            "@language": "de",
+            "@value": "H\u00f6he"
+          }
+        }
+      ],
+      "value": {
+        "type": "xsd:integer",
+        "@value": 106
+      },
+      "unit": {
+        "id": "https://www.wikidata.org/entity/Q174728",
+        "type": "MeasurementUnit",
+        "_label": {
+          "@language": "de",
+          "@value": "Zentimeter"
+        }
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://www.wikidata.org/wiki/Q35059",
+          "type": "Type",
+          "_label": {
+            "@language": "de",
+            "@value": "Breite"
+          }
+        }
+      ],
+      "value": {
+        "type": "xsd:decimal",
+        "@value": "101.1"
+      },
+      "unit": "https://www.wikidata.org/entity/Q174728"
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "https://www.wikidata.org/wiki/Q181591",
+          "type": "Type",
+          "_label": {
+            "@language": "de",
+            "@value": "Tiefe"
+          }
+        }
+      ],
+      "value": {
+        "type": "xsd:decimal",
+        "@value": "60.9"
+      },
+      "unit": "https://www.wikidata.org/entity/Q174728"
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        "http://www.wikidata.org/wiki/Q35059"
+      ],
+      "value": {
+        "type": "xsd:integer",
+        "@value": 190
+      },
+      "unit": "https://www.wikidata.org/entity/Q174728"
+    }
+  ],
+  "depicts": [
+    {
+      "id": "https://iconclass.org/94L",
+      "type": "Type",
+      "_label": {
+        "@language": "de",
+        "@value": "Geschichte von Hercules (Herakles)"
+      }
+    }
+  ],
+  "https://schema.org/image": [
+    {
+      "type": "https://schema.org/ImageObject",
+      "https://schema.org/contentUrl": {
+        "id": "http://resources.digicult-museen.net/dam/provided_image/m5ea54539bef06"
+      },
+      "https://schema.org/copyrightHolder": {
+        "id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      },
+      "https://schema.org/description": "Blick in ge\u00f6ffneten Kabinettschrank mit dunkelbrauner und wei\u00dfer Fassadenarchitektur aus Ebenholz und Elfenbein im Inneren des Schrankes und der beiden T\u00fcren",
+      "https://schema.org/license": {
+        "id": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "type": "Type",
+        "_label": {
+          "@language": "de",
+          "@value": "CC0 1.0 Universell"
+        }
+      }
+    },
+    {
+      "type": "https://schema.org/ImageObject",
+      "https://schema.org/contentUrl": {
+        "id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a0926f"
+      },
+      "https://schema.org/copyrightHolder": {
+        "id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      },
+      "https://schema.org/description": "Detailansicht eines Kabinettschranks mit gravierter Elfenbeinplakette mit Abbildung des Romulus in Rom",
+      "https://schema.org/license": {
+        "id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "type": "https://schema.org/ImageObject",
+      "https://schema.org/contentUrl": {
+        "id": "http://resources.digicult-museen.net/dam/provided_image/m5ea5453a433bb"
+      },
+      "https://schema.org/copyrightHolder": {
+        "id": "https://ld.zdb-services.de/resource/organisations/DE-MUS-059918"
+      },
+      "https://schema.org/description": "Detailansicht eines Kabinettschranks mit Fassadenarchitektur einschlie\u00dflich S\u00e4ulen, Atlanten und weiterer gravierter Bauelemente aus Elfenbein auf Ebenholzkonstruktion",
+      "https://schema.org/license": {
+        "id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    }
+  ]
+}
