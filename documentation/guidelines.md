@@ -1,6 +1,6 @@
 # Documentation
 
-This mapping deals with mapping LIDO 1.1 to the last official release of CIDOC CR (7.1.3).
+This mapping deals with mapping LIDO 1.1 to the last official release of CIDOC CRM (7.1.3).
 
 ## Modeling:
 
